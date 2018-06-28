@@ -27,6 +27,6 @@ kolla_config:
     enable_swift: no
     enable_haproxy: no
   kolla_passwords:
-    keystone_admin_password: Juniper123
+    keystone_admin_password: Contrail123
 global_configuration:
   REGISTRY_PRIVATE_INSECURE: True
