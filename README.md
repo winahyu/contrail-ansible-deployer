@@ -1,4 +1,4 @@
-# Contrail 5.0 AIO Installation
+# Contrail 5.0 AIO on Centos 7.4 Installation
 
 For a quick setup, here is the physical configuration for the All-In-One Contrail v5.0 machine or VM with preferred resources:
 
