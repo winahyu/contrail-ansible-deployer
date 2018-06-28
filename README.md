@@ -15,7 +15,7 @@ On both machines install Centos OS v7.4  from http://mirrors.mit.edu/centos/7/is
 
 Preparation of the Base Host Environment
 
-###Step 1. Contrail AIO Machine
+### Step 1. Contrail AIO Machine
 
 Upgrade kernel on Contrail AIO Machine
 
@@ -49,7 +49,7 @@ DNS1=8.8.8.8
 reboot
 ```
 
-###Step 2. Deployer / Installer Machine
+### Step 2. Deployer / Installer Machine
 
 After configuring Contrail AIO machine, now is the time to work inside Installer machine. First make sure the Contrail AIO machine is reachable from the Installer host. A few additional steps are needed before installation can start. First, the machine needs to have Ansible and Git. Use Git to clone contrail-ansible-deployer from the Juniper GitHub website.
 
@@ -100,7 +100,7 @@ global_configuration:
   REGISTRY_PRIVATE_INSECURE: True
 ```
 
-###Contrail Installation Process
+### Contrail Installation Process
 
 From deployer/installer these two Ansible playbook commands need to be executed to deploy Contrail v5.0:
 
@@ -143,7 +143,7 @@ localhost       : ok=7    changed=2    unreachable=0    failed=0
 [root@ Installer contrail-ansible-deployer]#
 ```
 
-###Contrail Web UI.
+### Contrail Web UI.
 
 Accessing the web UI after installation is completed.
 
