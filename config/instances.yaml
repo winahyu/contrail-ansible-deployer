@@ -1,0 +1,32 @@
+provider_config:
+  bms:
+    ssh_pwd: password
+    ssh_user: root
+    ntpserver: ntp.juniper.net
+    domainsuffix: local
+instances:
+  bms1:
+    provider: bms
+    ip: 10.233.255.7
+    roles:
+      config_database:
+      config:
+      control:
+      analytics_database:
+      analytics:
+      webui:
+      vrouter:
+      openstack:
+      openstack_compute:
+contrail_configuration:
+  RABBITMQ_NODE_PORT: 5673
+  AUTH_MODE: keystone
+  KEYSTONE_AUTH_URL_VERSION: /v3
+kolla_config:
+  kolla_globals:
+    enable_swift: no
+    enable_haproxy: no
+  kolla_passwords:
+    keystone_admin_password: Juniper123
+global_configuration:
+  REGISTRY_PRIVATE_INSECURE: True
