@@ -22,9 +22,9 @@ Upgrade kernel on Contrail AIO Machine
 Because of Docker overlay filesystem requirements, Centos OS v7.4 host needs to be upgraded to the kernel at least to 3.10.0-862 version, below is the steps to upgrade the kernel.
 
 ```
-yum install kernel-3.10.0-862.3.2.el7.x86_64
-yum install kernel-devel-3.10.0-862.3.2.el7.x86_64
-yum install kernel-headers-3.10.0-862.3.2.el7.x86_64
+yum install kernel-3.10.0-957.12.2.el7.x86_64
+yum install kernel-devel-3.10.0-957.12.2.el7.x86_64
+yum install kernel-headers-3.10.0-957.12.2.el7.x86_64
 grub2-set-default 0
 ```
 
